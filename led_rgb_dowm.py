@@ -1,11 +1,11 @@
 from machine import Pin
 from utime import sleep
 
-ledG = Pin(16, Pin.OUT)
+ledG = Pin(15, Pin.OUT)
 ledB = Pin(17, Pin.OUT)
 ledR = Pin(18, Pin.OUT)
 
-botao = Pin(15, Pin.IN, Pin.PULL_DOWN)
+botao = Pin(16, Pin.IN, Pin.PULL_DOWN)
 
 while True:
     valor = botao.value()
