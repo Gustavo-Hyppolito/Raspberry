@@ -1,9 +1,9 @@
 from machine import Pin
 from utime import sleep
 
-ledG = Pin(15, Pin.OUT)
-ledB = Pin(17, Pin.OUT)
-ledR = Pin(18, Pin.OUT)
+ledG = Pin(12, Pin.OUT)
+ledB = Pin(11, Pin.OUT)
+ledR = Pin(13, Pin.OUT)
 
 botao = Pin(16, Pin.IN, Pin.PULL_DOWN)
 
