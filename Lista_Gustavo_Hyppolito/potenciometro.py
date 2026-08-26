@@ -1,13 +1,13 @@
 from machine import Pin, PWM, ADC
 from utime import sleep
 
-pot = ADC(26)          # Leitura do potenciômetro no ADC0
-led = PWM(Pin(15))     # LED no pino 15
+pot = ADC(26)          
+led = PWM(Pin(15))     
 led.freq(1000)
 led.duty_u16(0)
 
 while True:
-    val = pot.read_u16()         # Valor de 0 a 65535
+    val = pot.read_u16()         
     porc_val = int((val * 100) / 65535)
     print(f"Valor porcentagem: {porc_val}%")
       
